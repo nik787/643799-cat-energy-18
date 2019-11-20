@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -11,11 +13,13 @@
         <div class="container page-header__container">
           <a class="page-header__logo">
             <picture class="logo">
-              <img src="https://via.placeholder.com/191x39" alt="Лого сайта Cat Energy, рыжий кот" width="191" height="39">
+              <img src="img/logo-mobile.svg" alt="Лого сайта Cat Energy, рыжий кот" width="191" height="39">
             </picture>
           </a>
           <nav class="page-header__nav nav">
-            <button class="nav__burger burger" type="button">Открыть меню</button>
+            <button class="nav__burger burger" type="button" aria-label="Открыть меню">
+              <span class="burger__line"></span>
+            </button>
             <ul class="nav__list">
               <li class="nav__item">
                 <a class="nav__link" href="index.html">Главная</a>
@@ -37,7 +41,7 @@
             <h1 class="page-main__title">Функциональное питание для котов</h1>
             <p class="page-main__subtitle">Занялся собой? Займись котом!</p>
             <picture class="page-main__image">
-                <img src="https://via.placeholder.com/280x270" alt="Оранжевая упаковка питания с курицей" width="280" height="270">
+                <img src="img/index-can-mobile@1x.png" alt="Оранжевая упаковка питания с курицей" width="280" height="270">
             </picture>
             <a class="button" href="form.html">Подобрать программу</a>
         </div>

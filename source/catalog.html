@@ -3,18 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <div class="container">
         <div class="container page-header__container">
-          <a class="page-header__logo" href="index.html">
+          <a class="page-header__logo">
             <picture class="logo">
-              <img src="https://via.placeholder.com/191x39" alt="Лого сайта Cat Energy, рыжий кот" width="191" height="39">
+              <img src="img/logo-mobile.svg" alt="Лого сайта Cat Energy, рыжий кот" width="191" height="39">
             </picture>
           </a>
           <nav class="page-header__nav nav">
-            <button class="nav__burger burger" type="button">Открыть меню</button>
+            <button class="nav__burger burger" type="button" aria-label="Открыть меню">
+              <span class="burger__line"></span>
+            </button>
             <ul class="nav__list">
               <li class="nav__item">
                 <a class="nav__link" href="index.html">Главная</a>
@@ -30,7 +33,7 @@
         </div>
       </div>
     </header>
-    <main class="page-main">
+    <main class="catalog-main">
       <section class="catalog">
         <div class="container catalog__container">
           <h2 class="catalog__title catalog__title--dark">Каталог продукции</h2>
