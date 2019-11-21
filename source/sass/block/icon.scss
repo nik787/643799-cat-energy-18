@@ -1,0 +1,35 @@
+.icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon--circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $special-color;
+}
+
+.icon--square {
+  width: 60px;
+  height: 60px;
+  background-color: $special-color;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+
+  &-leaf {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+  &-powder {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+  &-dining {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+  &-clock {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+}

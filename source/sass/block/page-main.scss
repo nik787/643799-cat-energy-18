@@ -1,9 +1,3 @@
-.page-main {
-  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
-  text-align: center;
-  color: #ffffff;
-}
-
 .page-main__container {
   position: relative;
 
@@ -12,6 +6,10 @@
 
 .page-main__header {
   height: 305px;
+  margin-bottom: 200px;
+  color: #ffffff;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  text-align: center;
 
   background: $special-color url("../img/index-background-mobile@1x.jpg") no-repeat top center / cover;
 }
