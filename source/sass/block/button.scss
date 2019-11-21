@@ -1,0 +1,40 @@
+.button {
+  display: block;
+
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  color: $main-button-color;
+  text-transform: uppercase;
+  text-align: center;
+
+  transition: all 0.3s;
+}
+.button--special {
+  padding: 16px 0;
+
+  color: $main-button-color;
+
+  background: $main-button-bg;
+  &:hover {
+    background: $main-button-bg--hover;
+  }
+  &:active {
+    color: rgba($main-button-color, 0.3%);
+  }
+}
+.button--other {
+  padding: 12px 0;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: $other-button-color;
+
+  background: $other-button-bg;
+  &:hover {
+    background: $other-button-bg--hover;
+  }
+  &:active {
+    color: rgba($other-button-color, 0.3%);
+  }
+}

@@ -4,14 +4,16 @@ $main-text-color: #444444;
 $title-color: #111111;
 
 $menu-color--onbg: #ffffff;
-$menu-color: #111111;
+$menu-color: $title-color;
 
 $special-color: #68b738;
 
-$main-button-color: $special-color;
-$main-button-color--hover: #5eaa2f;
-$other-button-color: #f2f2f2;
-$other-button-color--hover: #ebebeb;
+$main-button-color: #ffffff;
+$main-button-bg: $special-color;
+$main-button-bg--hover: #5eaa2f;
+$other-button-color: $main-text-color;
+$other-button-bg: #f2f2f2;
+$other-button-bg--hover: #ebebeb;
 
 $label-color: #222222;
 
