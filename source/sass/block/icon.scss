@@ -19,7 +19,6 @@
   background-repeat: no-repeat;
   background-position: center center;
 
-
   &-leaf {
     background-image: url("../img/advantage-leaf@1x.png");
   }
@@ -31,5 +30,16 @@
   }
   &-clock {
     background-image: url("../img/advantage-clock@1x.png");
+  }
+}
+.icon--social svg {
+  fill: #666666;
+
+  &:hover,
+  &:focus {
+    fill: $special-color;
+  }
+  &:active {
+    opacity: 0.3;
   }
 }

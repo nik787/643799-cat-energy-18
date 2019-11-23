@@ -1,5 +1,6 @@
 $main-bg: #ffffff;
 $other-bg: #f2f2f2;
+$border: #cdcdcd;
 
 $main-text-color: #444444;
 $title-color: #111111;
@@ -19,7 +20,7 @@ $button-link-color: #111111;
 
 $label-color: #222222;
 
-$input-color--hover: #cdcdcd;
+$input-color--hover: $border;
 $input-color--active: #444444;
 $input-color--error: #ff8282;
 $input-color: rgba($input-color--hover, 0.5);
