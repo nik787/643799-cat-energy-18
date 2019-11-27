@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -36,7 +38,7 @@
     <main class="form-main">
       <div class="container">
         <h2 class="title title--section form-main__title">Подбор программы</h2>
-        <p class="form-main__subtitle">
+        <p class="title form-main__subtitle">
           Заполните анкету и мы подберем программу питания для вашего кота
         </p>
         <form class="form-main__form form" action="https://echo.htmlacademy.ru" method="post">
@@ -84,7 +86,9 @@
               </ul>
             </fieldset>
             <fieldset class="form-group">
-              <legend class="title form-group__title">Контактные данные (владельца кота):</legend>
+              <legend class="title title--legend form-group__title">
+                <span>Контактные данные (владельца кота):</span>
+              </legend>
               <ul class="form-group__list">
                 <li class="form-group__item">
                   <label class="input">E-mail:*
@@ -99,12 +103,15 @@
               </ul>
             </fieldset>
             <fieldset class="form-group">
-              <legend class="title form-group__title">Комментарий:
-                <textarea class="input__text input__text--area" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <legend class="title title--legend form-group__title">
+                  <span>Комментарий:</span>
               </legend>
+              <textarea class="input__text input__text--area" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
             <fieldset class="form-group">
-              <legend class="title form-group__title">Дополнительно:</legend>
+              <legend class="title title--legend form-group__title">
+                <span>Дополнительно:</span>
+              </legend>
               <ul class="form-group__list">
                 <li class="form-group__item">
                   <label class="checkbox">

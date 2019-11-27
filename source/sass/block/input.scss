@@ -1,0 +1,18 @@
+.input {
+  display: flex;
+  align-items: center;
+  color: $label-color;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.input__text {
+  margin-left: 15px;
+  width: 100%;
+  padding: 13px 16px 14px;
+}
+
+.input__text--area {
+  margin: 0;
+  resize: none;
+}
