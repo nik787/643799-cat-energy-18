@@ -9,20 +9,24 @@
 
   transition: all 0.3s;
 }
+
 .button--special {
   padding: 16px 0;
 
   color: $main-button-color;
 
   background: $main-button-bg;
+
   &:hover,
   &:focus {
     background: $main-button-bg--hover;
   }
+
   &:active {
     color: rgba($main-button-color, 0.3%);
   }
 }
+
 .button--other {
   padding: 12px 0;
 
@@ -31,14 +35,17 @@
   color: $other-button-color;
 
   background: $other-button-bg;
+
   &:hover,
   &:focus {
     background: $other-button-bg--hover;
   }
+
   &:active {
     color: rgba($other-button-color, 0.3%);
   }
 }
+
 .button--link {
   display: flex;
   align-items: center;
@@ -47,6 +54,7 @@
   line-height: 16px;
   text-align: left;
   color: $button-link-color;
+
   &::after {
     content: "";
     right: 0;
@@ -58,6 +66,7 @@
 
     background: url("../img/icon-right-arrow-long.svg") no-repeat;
   }
+
   &:hover,
   &:focus {
     &::after {
@@ -66,10 +75,12 @@
       background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
     }
   }
+
   &:active {
     opacity: 0.3;
   }
 }
+
 .button--slider {
   font-size: 16px;
   line-height: 20px;
@@ -78,6 +89,7 @@
   &:focus {
     border-bottom: 1px solid rgba(#000000, 0.4%);
   }
+
   &:active {
     border: none;
   }

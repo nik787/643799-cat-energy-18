@@ -6,6 +6,7 @@
   background: none;
   border: none;
 }
+
 .burger__line {
   position: relative;
 
@@ -26,9 +27,11 @@
 
     background: #222222;
   }
+
   &::before {
     top: 7px;
   }
+
   &::after {
     bottom: 7px;
   }
