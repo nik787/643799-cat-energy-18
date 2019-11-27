@@ -1,0 +1,12 @@
+.example {
+  background: $other-bg;
+}
+
+.example__cost {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  text-align: center;
+  color: $title-color;
+  text-transform: uppercase;
+}

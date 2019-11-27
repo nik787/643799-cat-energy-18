@@ -1,0 +1,16 @@
+.program {
+  background: $other-bg;
+  padding: 22px;
+  margin-bottom: 20px;
+}
+
+.program__title {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.program__text {
+  padding-bottom: 23px;
+  border-bottom: 1px solid rgba(#000, 0.1%);
+}
