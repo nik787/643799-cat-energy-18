@@ -62,6 +62,7 @@
   &:focus {
     &::after {
       width: 34px;
+
       background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
     }
   }
@@ -75,7 +76,7 @@
 
   &:hover,
   &:focus {
-    border-bottom: 1px solid rgba(#000, 0.4%);
+    border-bottom: 1px solid rgba(#000000, 0.4%);
   }
   &:active {
     border: none;
