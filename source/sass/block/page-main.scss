@@ -1,0 +1,31 @@
+.page-main__container {
+  position: relative;
+
+  padding-top: 29px;
+}
+
+.page-main__header {
+  height: 305px;
+  margin-bottom: 200px;
+
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  text-align: center;
+  color: #ffffff;
+
+  background: $special-color url("../img/index-background-mobile@1x.jpg") no-repeat top center / cover;
+}
+
+.page-main__title {
+  margin: 0;
+
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.page-main__subtitle {
+  text-transform: uppercase;
+}
+
+.page-main__image {
+  display: block;
+}
