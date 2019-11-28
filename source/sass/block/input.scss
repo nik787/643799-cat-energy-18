@@ -10,6 +10,21 @@
   margin-left: 15px;
   width: 100%;
   padding: 13px 16px 14px;
+  border: 1px solid $input-color;
+  color: $main-text-color;
+
+  &:hover {
+    border: 1px solid $input-color--hover;
+  }
+
+  &:focus,
+  &:active {
+    border: 1px solid $input-color--active;
+  }
+
+  &:invalid {
+    border: 1px solid $input-color--error;
+  }
 }
 
 .input__text--area {
