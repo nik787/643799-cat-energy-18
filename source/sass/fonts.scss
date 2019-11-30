@@ -3,6 +3,7 @@
   font-weight: 400;
   font-family: "Oswald";
 
-  src: url("../fonts/oswaldregular.woff2");
-  src: local("Oswald"), url("../fonts/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswaldregular.woff2"), url("../fonts/oswaldregular.woff") format("woff");
 }
+
+$title-font: "Oswald", "Arial", "Helvetica", sans-serif;
