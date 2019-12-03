@@ -1,0 +1,38 @@
+.burger {
+  width: 25px;
+  height: 19px;
+  padding: 0;
+
+  background: none;
+  border: none;
+}
+
+.burger__line {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  height: 2px;
+
+  background: #222222;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: #222222;
+  }
+
+  &::before {
+    top: 7px;
+  }
+
+  &::after {
+    bottom: 7px;
+  }
+}

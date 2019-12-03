@@ -1,0 +1,19 @@
+.product-more__title {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 31px;
+    height: 31px;
+
+    background: url("../img/icon-plus-mobile.svg") no-repeat center center;
+  }
+}
+
+.product-more__subtitle {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}

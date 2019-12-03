@@ -1,0 +1,96 @@
+.button {
+  display: block;
+
+  font-size: 20px;
+  line-height: 20px;
+  font-family: $title-font;
+  text-align: center;
+  text-transform: uppercase;
+
+  transition: all 0.3s;
+}
+
+.button--special {
+  padding: 16px 0;
+
+  color: $main-button-color;
+
+  background: $main-button-bg;
+
+  &:hover,
+  &:focus {
+    background: $main-button-bg--hover;
+  }
+
+  &:active {
+    color: rgba($main-button-color, 0.3%);
+  }
+}
+
+.button--other {
+  padding: 12px 0;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: $other-button-color;
+
+  background: $other-button-bg;
+
+  &:hover,
+  &:focus {
+    background: $other-button-bg--hover;
+  }
+
+  &:active {
+    color: rgba($other-button-color, 0.3%);
+  }
+}
+
+.button--link {
+  display: flex;
+  align-items: center;
+
+  font-size: 16px;
+  line-height: 16px;
+  text-align: left;
+  color: $button-link-color;
+
+  &::after {
+    content: "";
+    right: 0;
+
+    display: block;
+    width: 25px;
+    height: 12px;
+    margin-left: 12px;
+
+    background: url("../img/icon-right-arrow-long.svg") no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      width: 34px;
+
+      background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.button--slider {
+  font-size: 16px;
+  line-height: 20px;
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid rgba(#000000, 0.4%);
+  }
+
+  &:active {
+    border: none;
+  }
+}

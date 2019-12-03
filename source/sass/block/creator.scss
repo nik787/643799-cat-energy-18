@@ -1,0 +1,19 @@
+.creator {
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+.creator:hover .creator__logo,
+.creator:focus .creator__logo {
+  fill: $special-color;
+}
+
+.creator__label {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.creator__logo {
+  fill: #666666;
+}

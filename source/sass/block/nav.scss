@@ -1,0 +1,29 @@
+.nav {
+  position: relative;
+
+  font-family: $title-font;
+  color: $menu-color;
+}
+
+.nav__burger {
+  position: absolute;
+}
+
+.nav__list {
+  @include list-reset();
+}
+
+.nav__item {
+  text-align: center;
+
+  border-top: 1px solid lightgrey;
+}
+
+.nav__link {
+  display: block;
+  padding: 22px 0;
+
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
