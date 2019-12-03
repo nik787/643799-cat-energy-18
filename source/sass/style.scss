@@ -1,16 +1,11 @@
-/*Основные настройки сайта*/
 @import "normalize";
 @import "color";
 @import "mixins";
 @import "fonts";
 @import "main-prop";
-
-/*Блоки используемые на всех страницах*/
 @import "block/title";
 @import "block/button";
 @import "block/icon";
-
-/*Блоки хэдера и футера сайта*/
 @import "block/page-header";
 @import "block/nav";
 @import "block/burger";
@@ -18,8 +13,6 @@
 @import "block/map";
 @import "block/social";
 @import "block/creator";
-
-/*Все что относится к индексу*/
 @import "block/page-main";
 @import "block/programs";
 @import "block/program";
@@ -27,8 +20,6 @@
 @import "block/example";
 @import "block/results";
 @import "block/slider";
-
-/*Все что относится к каталогу*/
 @import "block/catalog-main";
 @import "block/catalog";
 @import "block/catalog-list";
@@ -38,5 +29,3 @@
 @import "block/additional";
 @import "block/additional-product";
 @import "block/promo";
-
-/*Все что относится к форме*/
