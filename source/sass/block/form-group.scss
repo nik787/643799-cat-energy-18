@@ -1,0 +1,11 @@
+.form-group {
+  border: none;
+}
+
+.form-group__list {
+  @include list-reset();
+}
+
+.form-group__item {
+  margin-bottom: 13px;
+}

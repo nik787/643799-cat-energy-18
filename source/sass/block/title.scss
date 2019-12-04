@@ -1,6 +1,7 @@
 .title {
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   color: $title-color;
+  font-weight: normal;
 }
 
 .title--section {
@@ -36,4 +37,29 @@
 
     background: $special-color;
   }
+}
+
+.title--legend {
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 5px;
+    margin-left: 22px;
+    background: $special-color;
+  }
+}
+
+.title--legend span {
+  display: inline-block;
+  background: #ffffff;
+  z-index: 1;
+  padding-right: 22px;
 }
