@@ -1,14 +1,12 @@
 .creator {
-  &:hover,
-  &:focus {
-    .creator__logo {
-      fill: $special-color;
-    }
-  }
 
   &:active {
     opacity: 0.3;
   }
+}
+.creator:hover .creator__logo,
+.creator:focus .creator__logo {
+  fill: $special-color;
 }
 
 .creator__label {
