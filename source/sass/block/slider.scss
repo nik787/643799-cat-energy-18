@@ -1,10 +1,35 @@
+.slider__image {
+  width: 100%;
+}
+
+.slider__nav {
+  display: flex;
+  margin-top: 35px;
+}
+
+.slider__button--prev {
+  margin-left: auto;
+}
+
+.slider__button--next {
+  margin-right: auto;
+}
+
 .slider__range {
+  width: 84px;
+  margin-right: 18px;
+  margin-left: 18px;
+  padding: 4px;
+
   background: $main-bg;
   border: 1px solid $border;
   border-radius: 6px;
 }
 
 .slider__progress {
+  width: 40%;
+  height: 100%;
+
   background-color: $special-color;
   border-radius: 3px;
 }

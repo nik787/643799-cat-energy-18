@@ -1,3 +1,16 @@
 .social {
   @include list-reset();
+  padding-top: 22px;
+  padding-bottom: 22px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.social__item {
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }

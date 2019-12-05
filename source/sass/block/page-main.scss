@@ -1,31 +1,39 @@
 .page-main__container {
   position: relative;
 
-  padding-top: 29px;
+  padding-top: 26px;
+  padding-bottom: 22px;
 }
 
 .page-main__header {
-  height: 305px;
-  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 480px;
 
   font-family: $title-font;
   text-align: center;
   color: #ffffff;
 
-  background: $special-color url("../img/index-background-mobile@1x.jpg") no-repeat top center / cover;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat top;
+  background-size: 100% auto;
 }
 
 .page-main__title {
   margin: 0;
+  margin-bottom: 24px;
 
   font-size: 36px;
   line-height: 36px;
 }
 
 .page-main__subtitle {
+  margin-bottom: 26px;
+
   text-transform: uppercase;
 }
 
 .page-main__image {
   display: block;
+  margin: 0 auto 4px;
 }

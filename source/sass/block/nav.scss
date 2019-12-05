@@ -1,5 +1,6 @@
 .nav {
   position: relative;
+  width: 100%;
 
   font-family: $title-font;
   color: $menu-color;
@@ -7,10 +8,24 @@
 
 .nav__burger {
   position: absolute;
+  right: 0;
+  top: -34px;
 }
 
 .nav__list {
   @include list-reset();
+
+  height: 0;
+  transform: translateY(-200px);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.nav__list--open {
+  transform: translateY(0);
+
+  height: auto;
+
 }
 
 .nav__item {

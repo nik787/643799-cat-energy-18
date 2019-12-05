@@ -1,16 +1,31 @@
 .program {
-  background: $other-bg;
-  padding: 22px;
   margin-bottom: 20px;
+  padding: 22px 22px 0;
+
+  background: $other-bg;
 }
 
 .program__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
 }
 
+.program__icon {
+  margin-right: 20px;
+}
+
 .program__text {
-  padding-bottom: 23px;
+  margin: 0;
+  padding-bottom: 22px;
+
   border-bottom: 1px solid rgba(#000000, 0.1%);
+}
+
+.program__link {
+  padding: 20px 0;
 }

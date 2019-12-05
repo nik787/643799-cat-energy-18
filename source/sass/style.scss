@@ -3,6 +3,7 @@
 @import "mixins";
 @import "fonts";
 @import "main-prop";
+@import "grid";
 @import "block/title";
 @import "block/button";
 @import "block/icon";
@@ -29,8 +30,8 @@
 @import "block/additional";
 @import "block/additional-product";
 @import "block/promo";
-@import "block/form-main.scss";
-@import "block/form.scss";
-@import "block/form-group.scss";
-@import "block/input.scss";
+@import "block/form-main";
+@import "block/form";
+@import "block/form-group";
+@import "block/input";
 

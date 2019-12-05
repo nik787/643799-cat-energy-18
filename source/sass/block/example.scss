@@ -2,7 +2,19 @@
   background: $other-bg;
 }
 
+.example__container {
+  padding-top: 16px;
+  padding-bottom: 38px;
+}
+
+.example__text {
+  margin-top: 23px;
+  margin-bottom: 25px;
+}
 .example__cost {
+  margin-top: 34px;
+  margin-bottom: 34px;
+
   font-size: 14px;
   line-height: 20px;
   font-family: $title-font;

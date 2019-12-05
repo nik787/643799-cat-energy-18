@@ -1,0 +1,23 @@
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desctop-width: 1300px;
+
+.container {
+  width: 100%;
+  max-width: $mobile-width;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    min-width: $tablet-width;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .container {
+    max-width: $desctop-width;
+  }
+}

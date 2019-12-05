@@ -37,3 +37,13 @@ ymaps.ready(function () {
   myMap.geoObjects
       .add(myPlacemark)
 });
+
+var burger = document.querySelector(".nav__burger");
+var menu = document.querySelector(".nav__list");
+console.log(burger);
+
+burger.addEventListener("click", function(e) {
+  e.preventDefault();
+
+  menu.classList.toggle("nav__list--open");
+});
