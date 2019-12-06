@@ -34,6 +34,37 @@
 }
 
 .page-main__image {
+  position: absolute;
   display: block;
   margin: 0 auto 4px;
+  width: 280px;
+  height: 270px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-main__header {
+    min-height: 860px;
+    background: none;
+    color: $title-color;
+    text-align: left;
+  }
+
+  .page-main__title {
+    width: 60%;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .page-main__subtitle {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .page-main__image {
+    display: block;
+    width: 709px;
+    height: 609px;
+    margin: 0 auto 4px;
+  }
 }
