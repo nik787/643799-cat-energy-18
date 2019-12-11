@@ -71,3 +71,9 @@
 
   background: #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .title--section {
+    font-size: 60px;
+  }
+}

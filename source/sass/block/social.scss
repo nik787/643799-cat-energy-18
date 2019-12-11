@@ -2,13 +2,14 @@
   @include list-reset();
   display: flex;
   align-items: center;
+  width: 130px;
   margin: 0 auto;
   padding-top: 22px;
   padding-bottom: 22px;
 }
 
 .social__item {
-  margin-right: 35px;
+  margin-right: 37px;
 
   &:last-child {
     margin-right: 0;

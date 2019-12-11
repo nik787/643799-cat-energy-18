@@ -3,8 +3,8 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 11px;
-  padding-bottom: 13px;
+  padding-top: 13px;
+  padding-bottom: 10px;
 }
 
 .page-header__logo {
@@ -15,5 +15,12 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__container {
+    padding-top: 20px;
+
   }
 }

@@ -1,14 +1,14 @@
 .program {
-  margin-bottom: 20px;
-  padding: 22px 22px 0;
+  position: relative;
+  margin-bottom: 19px;
+  padding: 30px 22px 0;
 
   background: $other-bg;
 }
 
 .program__title {
-  display: flex;
-  align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
+  padding-left: 70px;
 
   font-size: 24px;
   line-height: 37px;
@@ -16,7 +16,8 @@
 }
 
 .program__icon {
-  margin-right: 20px;
+  position: absolute;
+  top: 21px;
 }
 
 .program__text {
@@ -28,4 +29,48 @@
 
 .program__link {
   padding: 20px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    padding: 68px 62px 40px 55px;
+    margin-bottom: 30px;
+  }
+
+  .program--pro {
+    padding-top: 77px;
+
+  }
+
+  .program__title {
+    margin-bottom: 25px;
+    padding: 0;
+    font-size: 36px;
+    line-height: 37px;
+  }
+
+  .program__text {
+    width: 340px;
+    margin-bottom: 14px;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .program__icon {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    right: 62px;
+  }
+
+  .icon__item--slim {
+    width: 141px;
+    height: 194px;
+  }
+
+  .icon__item--pro {
+    width: 268px;
+    height: 113px;
+  }
 }
