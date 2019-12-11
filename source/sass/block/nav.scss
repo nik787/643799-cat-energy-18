@@ -22,12 +22,12 @@
   transition: all 0.3s;
 
   @include list-reset();
-}
 
-.nav__list--open {
-  height: auto;
+  &--open {
+    height: auto;
 
-  transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 
 .nav__item {
