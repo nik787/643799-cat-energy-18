@@ -21,14 +21,8 @@
 
   width: 100%;
 
-  background-image: url(../img/before-mobile@1x.png);
+  background-image: url("../img/before-mobile@1x.png");
 }
-
-// .slider__image--after {
-//   width: 100%;
-
-//   background-image: url(../img/after-mobile@1x.png);
-// }
 
 .slider__nav {
   display: flex;
@@ -69,10 +63,6 @@
   }
 
   .slider__image--before {
-    background-image: url(../img/before-tablet@1x.png);
+    background-image: url("../img/before-tablet@1x.png");
   }
-
-  // .slider__image--after {
-  //   background-image: url(../img/after-tablet@1x.png);
-  // }
 }

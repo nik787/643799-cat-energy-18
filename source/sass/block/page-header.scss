@@ -1,3 +1,16 @@
+.page-header {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    min-height: 305px;
+    background-color: #63a73a;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
+
 .page-header__container {
   display: flex;
   flex-flow: row wrap;
@@ -19,8 +32,28 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    &::after {
+      background: none;
+    }
+  }
+
   .page-header__container {
     padding-top: 20px;
+  }
+}
 
+@media (min-width: $desctop-width) {
+  .page-header {
+    &::after {
+      top: 0;
+      right: 0;
+      height: 696px;
+      width: 50%;
+      background-color: #63a73a;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: right;
+    }
   }
 }

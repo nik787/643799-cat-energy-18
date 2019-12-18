@@ -14,17 +14,6 @@
   font-family: $title-font;
   text-align: center;
   color: #ffffff;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    min-height: 305px;
-    background-color: #63a73a;
-    background-image: url("../img/index-background-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-  }
 }
 
 .page-main__title {
@@ -60,10 +49,6 @@
 
     text-align: left;
     color: $title-color;
-
-    &::before {
-      background: none;
-    }
   }
 
   .page-main__title {
