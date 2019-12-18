@@ -3,15 +3,13 @@ $tablet-width: 768px;
 $desctop-width: 1300px;
 
 .container {
-  width: 100%;
-  margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    min-width: $tablet-width;
+    min-width: $tablet-width - 60px;
     padding-right: 30px;
     padding-left: 30px;
   }
@@ -19,6 +17,9 @@ $desctop-width: 1300px;
 
 @media (min-width: $desctop-width) {
   .container {
-    max-width: $desctop-width;
+    max-width: $desctop-width - 80px;
+    margin: 0 auto;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }

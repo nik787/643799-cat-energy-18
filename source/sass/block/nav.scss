@@ -1,6 +1,6 @@
 .nav {
   position: relative;
-
+  z-index: 1;
   width: 100%;
 
   font-family: $title-font;
@@ -14,16 +14,18 @@
 }
 
 .nav__list {
+  display: none;
   height: 0;
   overflow: hidden;
 
   transform: translateY(-200px);
 
-  transition: all 0.3s;
+  transition: all 0.5s;
 
   @include list-reset();
 
   &--open {
+    display: block;
     height: auto;
 
     transform: translateY(0);
