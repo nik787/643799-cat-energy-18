@@ -48,7 +48,6 @@
   .instruction__list {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
     counter-reset: section;
   }
 
@@ -57,7 +56,7 @@
     display: block;
     flex-basis: 250px;
     min-height: 230px;
-    margin-right: 150px;
+    margin-right: 135px;
     margin-bottom: 89px;
 
     &:nth-child(3) {

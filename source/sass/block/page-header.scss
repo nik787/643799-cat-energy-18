@@ -1,4 +1,4 @@
-.page-header {
+.page-header--preview {
   &::after {
     content: "";
     position: absolute;
@@ -32,7 +32,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
+  .page-header--preview {
     &::after {
       background: none;
     }
@@ -44,7 +44,7 @@
 }
 
 @media (min-width: $desctop-width) {
-  .page-header {
+  .page-header--preview {
     &::after {
       top: 0;
       right: 0;

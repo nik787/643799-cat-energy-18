@@ -24,3 +24,14 @@
 .creator__logo {
   fill: #666666;
 }
+
+@media (min-width: $tablet-width) {
+  .creator {
+    border-top: 0;
+
+  }
+
+  .creator__label {
+    padding-right: 15px;
+  }
+}

@@ -1,6 +1,7 @@
 .nav {
   position: relative;
   z-index: 1;
+
   width: 100%;
 
   font-family: $title-font;
@@ -51,6 +52,8 @@
   .nav {
     width: auto;
     min-width: 440px;
+
+    color: $label-color;
   }
 
   .nav__burger {
@@ -72,7 +75,6 @@
   .nav__link {
     font-size: 18px;
     line-height: 25px;
-    color: $label-color;
 
     &:hover,
     &:focus {
@@ -85,8 +87,23 @@
   }
 
   .nav__link--active {
-    padding-bottom: 12px;
+    padding-bottom: 7px;
 
     border-bottom: 2px solid $special-color;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .nav {
+    color: $menu-color--onbg;
+  }
+
+  .nav__link {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .nav__link--active {
+    border-bottom: 2px solid $menu-color--onbg;
   }
 }

@@ -1,3 +1,13 @@
+.programs__container {
+  padding-top: 11px;
+}
+
 .programs__list {
   @include list-reset();
+}
+
+@media (min-width: $tablet-width) {
+  .programs__container {
+    padding-top: 0;
+  }
 }

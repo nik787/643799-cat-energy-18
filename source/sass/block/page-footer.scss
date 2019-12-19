@@ -41,3 +41,20 @@
 
   border-bottom: 1px solid $border;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer__text {
+    line-height: 25px;
+  }
+
+  .page-footer__bottom .page-footer__container {
+    flex-direction: row;
+  }
+
+  .page-footer__logo {
+    width: auto;
+    margin: 0;
+    border-bottom: 0;
+
+  }
+}

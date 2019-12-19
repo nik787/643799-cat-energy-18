@@ -39,3 +39,12 @@ a {
 
   clip: rect(0 0 0 0);
 }
+
+@media (min-width: $tablet-width) {
+  html,
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+}

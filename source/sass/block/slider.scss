@@ -1,7 +1,7 @@
 .slider__wrapper {
   position: relative;
+  display: flex;
 
-  width: 100%;
   height: 232px;
   margin-bottom: 40px;
 }
@@ -9,19 +9,7 @@
 .slider__image {
   position: absolute;
 
-  width: 100%;
-  height: 100%;
-
   background-repeat: no-repeat;
-}
-
-.slider__image--before {
-  left: 0;
-  z-index: 1;
-
-  width: 100%;
-
-  background-image: url("../img/before-mobile@1x.png");
 }
 
 .slider__nav {
@@ -58,11 +46,5 @@
 }
 
 @media (min-width: $tablet-width) {
-  .slider__wrapper {
-    min-height: 499px;
-  }
 
-  .slider__image--before {
-    background-image: url("../img/before-tablet@1x.png");
-  }
 }
