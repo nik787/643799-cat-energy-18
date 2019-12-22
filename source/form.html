@@ -10,7 +10,7 @@
   <body>
     <header class="page-header">
       <div class="container page-header__container">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -29,7 +29,7 @@
               <a class="nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="form.html">Подбор программы</a>
+              <a class="nav__link nav__link--active">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -147,20 +147,21 @@
       </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__top page-footer--gray">
-        <div class="container page-footer__container">
+      <div class="container page-footer__container">
+        <div class="page-footer__top">
           <p class="page-footer__text">
             Приглашаем к сотрудничеству дилеров!
           </p>
           <p class="page-footer__addr">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8
+            <span>Санкт-Петербург</span>
           </p>
         </div>
       </div>
       <div class="page-footer__map map" id="map"></div>
-      <div class="page-footer__bottom">
-        <div class="container page-footer__container">
-          <a class="page-footer__logo">
+      <div class="container page-footer__container">
+        <div class="page-footer__bottom">
+          <a class="page-footer__logo" href="index.html">
             <img class="logo" src="img/logo-footer.svg" alt="Логотип Cat Energy в черном минималистичном стиле" width="128" height="24">
           </a>
           <ul class="page-footer__social social">
@@ -199,3 +200,4 @@
     <script src="js/main.js"></script>
   </body>
 </html>
+

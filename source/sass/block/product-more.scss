@@ -1,19 +1,34 @@
+.product-more {
+  min-height: 210px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  text-align: center;
+}
+
 .product-more__title {
   position: relative;
+
+  margin-bottom: 10px;
+  padding-top: 55px;
 
   &::before {
     content: "";
     position: absolute;
+    top: 0;
+    left: 50%;
 
     width: 31px;
     height: 31px;
 
     background: url("../img/icon-plus-mobile.svg") no-repeat center center;
+    transform: translateX(-50%);
   }
 }
 
 .product-more__subtitle {
+  display: block;
+  margin-bottom: 22px;
   font-size: 12px;
   line-height: 16px;
-  text-align: center;
 }

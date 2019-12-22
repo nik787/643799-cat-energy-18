@@ -94,7 +94,7 @@
 }
 
 @media (min-width: $desctop-width) {
-  .nav {
+  .nav--onbg {
     color: $menu-color--onbg;
   }
 
@@ -103,7 +103,7 @@
     line-height: 25px;
   }
 
-  .nav__link--active {
+  .nav--onbg .nav__link--active {
     border-bottom: 2px solid $menu-color--onbg;
   }
 }

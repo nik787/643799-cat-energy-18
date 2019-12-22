@@ -1,8 +1,28 @@
 .product {
-  border: 1px solid #ededed;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 25px;
+}
+
+.product__wrapper {
+  display: flex;
 }
 
 .product__image {
   width: 140px;
   height: 144px;
+}
+
+.product__desc {
+  width: 100%;
+}
+
+.product__title {
+  width: 80px;
+  padding-top: 25px;
+  margin-bottom: 18px;
+}
+
+.product__table {
+  margin-bottom: 23px;
 }
