@@ -1,10 +1,13 @@
 .promo {
+  min-height: 289px;
+  padding: 65px 55px 40px;
   background: $special-color url("../img/gift-photo-mobile@1x.jpg") no-repeat top center / cover;
 }
 
 .promo__text {
   position: relative;
-
+  margin: 0;
+  padding-top: 120px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -13,6 +16,9 @@
   &::before {
     content: "";
     position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 
     width: 56px;
     height: 61px;
