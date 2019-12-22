@@ -11,3 +11,19 @@
     padding-top: 0;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .programs__container {
+    padding-top: 80px;
+  }
+
+  .programs__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    width: 570px;
+  }
+}

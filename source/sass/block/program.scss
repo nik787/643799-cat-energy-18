@@ -73,3 +73,27 @@
     height: 113px;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .program__icon {
+    top: 45px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .icon__item--slim {
+    width: 71px;
+    height: 97px;
+  }
+
+  .icon__item--pro {
+    width: 134px;
+    height: 57px;
+  }
+
+  .program__title {
+    padding-left: 150px;
+    margin-bottom: 75px;
+  }
+}
