@@ -9,3 +9,11 @@
 .additional__title {
   margin-bottom: 30px;
 }
+
+@media (min-width: $desctop-width) {
+  .additional__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}

@@ -18,9 +18,16 @@
   }
 
   .catalog__item {
-   width: 324px;
-   min-height: 431px;
-   margin-bottom: 140px;
-   border: none;
+    display: flex;
+    width: 324px;
+    min-height: 431px;
+    margin-bottom: 140px;
+    border: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__item {
+    width: 245px;
   }
 }
