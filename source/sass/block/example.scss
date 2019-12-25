@@ -43,10 +43,11 @@
     line-height: 24px;
   }
 
-  .example__wrapper {
+  .example__results {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 72px;
   }
 
   .example__cost {
@@ -56,5 +57,31 @@
     font-size: 20px;
     line-height: 28px;
     text-align: right;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .example__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__wrapper {
+    width: 470px;
+  }
+
+  .example__results {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .example__cost {
+    width: 100%;
+    text-align: left;
+    margin-top: 50px;
+  }
+
+  .example__cost span {
+    padding-left: 65px;
   }
 }
