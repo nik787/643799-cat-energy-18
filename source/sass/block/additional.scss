@@ -10,10 +10,15 @@
   margin-bottom: 30px;
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .additional__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+  }
+
+  .additional__list {
+    width: 100%;
+    margin-right: 80px;
   }
 }

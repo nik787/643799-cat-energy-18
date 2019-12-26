@@ -42,13 +42,31 @@
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .additional-product {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    padding: 15px 0;
+
+    border-right: none;
+    border-left: none;
   }
 
   .additional-product__wrapper {
+    width: 100%;
     margin: 0;
+  }
+
+  .additional-product__title {
+    margin-right: auto;
+  }
+
+  .additional-product__table {
+    margin-right: 40px;
+  }
+
+  .additional-product__button {
+    width: 245px;
   }
 }
