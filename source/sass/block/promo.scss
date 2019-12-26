@@ -60,10 +60,12 @@
     padding: 65px 40px 40px;
 
     background: $special-color url("../img/gift-photo-desktop@1x.jpg") no-repeat top center / cover;
+
     &::before {
       left: 50%;
     }
   }
+
   .promo__text {
     margin-top: auto;
 
