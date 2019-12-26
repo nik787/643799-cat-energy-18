@@ -6,8 +6,10 @@
   &::after {
     content: "";
     position: absolute;
+
     width: 100%;
     min-height: 305px;
+
     background-color: #63a73a;
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -56,8 +58,10 @@
     &::after {
       top: 0;
       right: 0;
-      height: 696px;
+
       width: 50%;
+      height: 696px;
+
       background-color: #63a73a;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;

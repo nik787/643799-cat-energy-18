@@ -59,11 +59,14 @@
   }
 
   .results__desc-value {
+    bottom: -5px;
+
     min-width: 145px;
     padding: 0 8px;
-    background: $main-bg;
+
     font-size: 14px;
     line-height: 14px;
-    bottom: -5px;
+
+    background: $main-bg;
   }
 }

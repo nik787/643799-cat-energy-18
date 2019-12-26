@@ -15,6 +15,8 @@
 }
 
 .nav__list {
+  @include list-reset();
+
   display: none;
   height: 0;
   overflow: hidden;
@@ -22,8 +24,6 @@
   transform: translateY(-200px);
 
   transition: all 0.5s;
-
-  @include list-reset();
 
   &--open {
     display: block;
