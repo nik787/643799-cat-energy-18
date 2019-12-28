@@ -1,16 +1,105 @@
 .program {
+  position: relative;
+
+  margin-bottom: 19px;
+  padding: 30px 22px 0;
+
   background: $other-bg;
-  padding: 22px;
-  margin-bottom: 20px;
 }
 
 .program__title {
+  margin-bottom: 30px;
+  padding-left: 70px;
+
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
 }
 
+.program__icon {
+  position: absolute;
+  top: 21px;
+}
+
 .program__text {
-  padding-bottom: 23px;
+  margin: 0;
+  padding-bottom: 22px;
+
   border-bottom: 1px solid rgba(#000000, 0.1%);
+}
+
+.program__link {
+  padding: 20px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    margin-bottom: 30px;
+    padding: 68px 62px 40px 55px;
+  }
+
+  .program--pro {
+    padding-top: 77px;
+  }
+
+  .program__title {
+    margin-bottom: 25px;
+    padding: 0;
+
+    font-size: 36px;
+    line-height: 37px;
+  }
+
+  .program__text {
+    width: 340px;
+    margin-bottom: 14px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    border: none;
+  }
+
+  .program__icon {
+    top: 92px;
+    right: 62px;
+
+    width: 200px;
+    height: 200px;
+  }
+
+  .icon__item--slim {
+    width: 141px;
+    height: 194px;
+  }
+
+  .icon__item--pro {
+    width: 268px;
+    height: 113px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program__icon {
+    top: 45px;
+    left: 50px;
+
+    width: 100px;
+    height: 100px;
+  }
+
+  .icon__item--slim {
+    width: 71px;
+    height: 97px;
+  }
+
+  .icon__item--pro {
+    width: 134px;
+    height: 57px;
+  }
+
+  .program__title {
+    margin-bottom: 75px;
+    padding-left: 150px;
+  }
 }

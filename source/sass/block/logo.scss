@@ -1,0 +1,14 @@
+.logo--header {
+  width: 191px;
+  height: 39px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 203px;
+    height: 60px;
+  }
+}

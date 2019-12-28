@@ -2,7 +2,24 @@
   background: $other-bg;
 }
 
+.page-footer__top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.page-footer__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
 .page-footer__text {
+  margin-right: 25px;
+
   font-size: 16px;
   line-height: 20px;
   font-family: $title-font;
@@ -12,4 +29,71 @@
 
 .page-footer__addr {
   line-height: 20px;
+}
+
+.page-footer__logo {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 26px;
+  padding-bottom: 27px;
+
+  text-align: center;
+
+  border-bottom: 1px solid $border;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__top {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .page-footer__text {
+    width: 155px;
+    margin: 0;
+
+    line-height: 25px;
+  }
+
+  .page-footer__addr {
+    display: flex;
+    flex-direction: column;
+    width: 155px;
+    margin: 0;
+
+    text-align: right;
+  }
+
+  .page-footer__addr span {
+    margin-top: 20px;
+  }
+
+  .page-footer__bottom {
+    flex-direction: row;
+  }
+
+  .page-footer__logo {
+    width: auto;
+    margin: 0;
+
+    border-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    position: relative;
+  }
+
+  .page-footer__top {
+    position: absolute;
+    top: 90px;
+    z-index: 9999;
+
+    min-width: 570px;
+    padding-right: 75px;
+    padding-left: 75px;
+
+    background-color: $main-bg;
+  }
 }

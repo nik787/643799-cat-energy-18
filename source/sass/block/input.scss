@@ -1,17 +1,21 @@
 .input {
   display: flex;
   align-items: center;
-  color: $label-color;
+
   font-size: 16px;
   line-height: 18px;
+  color: $label-color;
 }
 
 .input__text {
-  margin-left: 15px;
   width: 100%;
+  margin-left: 15px;
   padding: 13px 16px 14px;
-  border: 1px solid $input-color;
+
+  font: inherit;
   color: $main-text-color;
+
+  border: 1px solid $input-color;
 
   &:hover {
     border: 1px solid $input-color--hover;
@@ -29,5 +33,6 @@
 
 .input__text--area {
   margin: 0;
+
   resize: none;
 }

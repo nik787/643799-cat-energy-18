@@ -1,3 +1,14 @@
 .catalog-list {
   @include list-reset();
 }
+
+.catalog-list__item {
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-list__item {
+    border: none;
+  }
+}

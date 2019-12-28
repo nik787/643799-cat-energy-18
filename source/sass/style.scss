@@ -1,12 +1,13 @@
-@import "normalize";
 @import "color";
 @import "mixins";
 @import "fonts";
+@import "grid";
 @import "main-prop";
 @import "block/title";
 @import "block/button";
 @import "block/icon";
 @import "block/page-header";
+@import "block/logo";
 @import "block/nav";
 @import "block/burger";
 @import "block/page-footer";
@@ -20,17 +21,15 @@
 @import "block/example";
 @import "block/results";
 @import "block/slider";
-@import "block/catalog-main";
-@import "block/catalog";
 @import "block/catalog-list";
+@import "block/catalog";
 @import "block/product";
 @import "block/table";
 @import "block/product-more";
 @import "block/additional";
 @import "block/additional-product";
 @import "block/promo";
-@import "block/form-main.scss";
-@import "block/form.scss";
-@import "block/form-group.scss";
-@import "block/input.scss";
-
+@import "block/form-main";
+@import "block/form-group";
+@import "block/input";
+@import "block/radio";

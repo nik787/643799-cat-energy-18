@@ -11,6 +11,7 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 
   font-size: 14px;
   line-height: 18px;
@@ -18,7 +19,6 @@ body {
   color: $main-text-color;
 
   background-color: $main-bg;
-  overflow-x: hidden;
 }
 
 a {
@@ -38,4 +38,12 @@ a {
   border: 0;
 
   clip: rect(0 0 0 0);
+}
+
+@media (min-width: $tablet-width) {
+  html,
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

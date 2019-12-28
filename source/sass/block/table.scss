@@ -1,5 +1,7 @@
 .table {
   width: 100%;
+
+  border-collapse: collapse;
 }
 
 .table--product {
@@ -18,4 +20,16 @@
 
 .table__col:last-child {
   text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .table--product {
+    font-size: 16px;
+  }
+
+  .table--product .table__col {
+    padding: 5px 0;
+
+    border-bottom: 1px solid $border;
+  }
 }
