@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="container page-header__container">
         <a class="page-header__logo" href="index.html">
@@ -65,20 +68,20 @@
             </fieldset>
             <fieldset class="form-group">
               <legend class="visual-hidden">Для чего:</legend>
-              <ul class="form-group__list">
-                <li class="form-group__item">
+              <ul class="form-group__list radio-list">
+                <li class="form-group__item radio-list__item">
                   <label class="radio">
-                    <input class="visual-hidden" type="radio" name="radio" id="radio-slimming" value="Похудение">
+                    <input class="visual-hidden" type="radio" name="radio" id="radio-slimming" value="Похудение" checked>
                     <span class="radio__label">Похудение</span>
                   </label>
                 </li>
-                <li class="form-group__item">
+                <li class="form-group__item radio-list__item">
                   <label class="radio">
                     <input class="visual-hidden" type="radio" name="radio" id="radio-mass" value="Набор массы">
                     <span class="radio__label">Набор массы</span>
                   </label>
                 </li>
-                <li class="form-group__item">
+                <li class="form-group__item radio-list__item">
                   <label class="radio">
                     <input class="visual-hidden" type="radio" name="radio" id="radio-advice" value="Не знаю (Нужен ваш совет)">
                     <span class="radio__label">Не знаю (Нужен ваш совет)</span>
@@ -108,7 +111,9 @@
             <legend class="title title--legend form-group__title">
                 <span>Комментарий:</span>
             </legend>
-            <textarea class="input__text input__text--area" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <label class="input">
+              <textarea class=" input__text input__text--area" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </label>
           </fieldset>
           <fieldset class="form-group">
             <legend class="title title--legend form-group__title">

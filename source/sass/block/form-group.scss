@@ -5,6 +5,10 @@
   border: none;
 }
 
+.form-group__title {
+  margin-bottom: 30px;
+}
+
 .form-group__list {
   @include list-reset();
 }
