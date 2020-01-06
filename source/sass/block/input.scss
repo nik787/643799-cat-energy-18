@@ -5,6 +5,7 @@
   align-items: center;
 
   color: $label-color;
+  text-transform: uppercase;
 }
 
 .input__text {
@@ -14,6 +15,7 @@
 
   font: inherit;
   color: $main-text-color;
+  text-transform: uppercase;
 
   border: 1px solid $input-color;
 
@@ -41,8 +43,8 @@
 
 .input__icon {
   position: absolute;
-  z-index: 5;
   right: 15px;
+  z-index: 5;
 }
 
 .input__icon--email {

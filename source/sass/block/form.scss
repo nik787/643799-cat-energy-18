@@ -16,6 +16,18 @@
   padding-right: 20px;
   padding-bottom: 23px;
   padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.form__col--bottom {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .form__col--radio {
@@ -23,6 +35,12 @@
 
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
+
+  @media (min-width: $tablet-width) {
+    padding: 33px 28px;
+
+    border: 1px solid #ededed;
+  }
 }
 
 .form__button {
@@ -31,6 +49,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 283px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,5 +61,15 @@
   display: block;
   margin: 0 auto;
 
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Arial", "Helvetica", sans-serif;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

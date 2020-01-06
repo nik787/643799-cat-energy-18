@@ -28,3 +28,18 @@
 .form-group__item:last-child {
   margin-bottom: 0;
 }
+
+
+@media (min-width: $tablet-width) {
+  .form-group__list--checkbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .form-group__item--checkbox {
+    flex: 0 0 50%;
+    width: 50%;
+    margin-bottom: 54px;
+  }
+}

@@ -105,6 +105,7 @@
 
 .button--submit {
   padding: 10px;
+
   font-size: 16px;
   line-height: 20px;
   color: $main-button-color;
@@ -137,11 +138,15 @@
 
   .button--link {
     font-size: 20px;
-    line-height: 20px;
   }
 
   .button--slider {
     font-size: 20px;
-    line-height: 20px;
+  }
+
+  .button--submit {
+    padding: 16px;
+
+    font-size: 20px;
   }
 }
