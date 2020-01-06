@@ -1,21 +1,33 @@
+.form {
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 .form__row {
   padding-top: 20px;
 }
 
 .form__col {
+  padding-right: 20px;
   padding-bottom: 23px;
   padding-left: 20px;
-  padding-right: 20px;
 }
 
 .form__col--radio {
   padding-top: 29px;
+
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
 }
 
 .form__button {
   width: 100%;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     max-width: 283px;
@@ -29,5 +41,6 @@
 .form__tip {
   display: block;
   margin: 0 auto;
+
   text-align: center;
 }
