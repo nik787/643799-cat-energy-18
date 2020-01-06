@@ -1,6 +1,6 @@
 .form-group {
   margin: 0;
-  padding: 20px;
+  padding: 0;
 
   border: none;
 }
@@ -15,4 +15,16 @@
 
 .form-group__item {
   margin-bottom: 13px;
+}
+
+.form-group__item--radio {
+  margin-bottom: 30px;
+}
+
+.form-group__item--checkbox {
+  margin-bottom: 28px;
+}
+
+.form-group__item:last-child {
+  margin-bottom: 0;
 }

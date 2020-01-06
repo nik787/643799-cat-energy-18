@@ -1,2 +1,33 @@
-.form__groups {
+.form__row {
+  padding-top: 20px;
+}
+
+.form__col {
+  padding-bottom: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form__col--radio {
+  padding-top: 29px;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.form__button {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 283px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 568px;
+  }
+}
+
+.form__tip {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
