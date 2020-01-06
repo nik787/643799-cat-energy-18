@@ -1,4 +1,6 @@
 .input {
+  position: relative;
+
   display: flex;
   align-items: center;
 
@@ -29,6 +31,30 @@
   &:invalid {
     border: 1px solid $input-color--error;
   }
+}
+
+.input__text:invalid + .input__icon {
+  fill: $input-color--error;
+}
+
+.input__text:focus + .input__icon {
+  fill: $special-color;
+}
+
+.input__icon {
+  position: absolute;
+  z-index: 5;
+  right: 15px;
+}
+
+.input__icon--email {
+  width: 18px;
+  height: 14px;
+}
+
+.input__icon--phone {
+  width: 21px;
+  height: 21px;
 }
 
 .input__text--area {
