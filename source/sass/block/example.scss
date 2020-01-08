@@ -1,5 +1,6 @@
 .example {
   background: $other-bg;
+  position: relative;
 }
 
 .example__container {
@@ -27,6 +28,18 @@
 @media (min-width: $tablet-width) {
   .example {
     background: $main-bg;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      height: 47%;
+      background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+      z-index: -1;
+    }
   }
 
   .example__container {
@@ -63,6 +76,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .example {
+    &::after {
+      height: 75%;
+      background: linear-gradient(to right, #f2f2f2 67.5%, #eaeaea 32.5%);
+    }
+  }
+
   .example__container {
     display: flex;
     justify-content: space-between;
@@ -70,6 +90,10 @@
 
   .example__wrapper {
     width: 470px;
+  }
+
+  .example__title {
+    margin-bottom: 140px;
   }
 
   .example__results {
