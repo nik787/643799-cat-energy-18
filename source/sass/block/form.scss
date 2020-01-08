@@ -10,6 +10,24 @@
 
 .form__row {
   padding-top: 20px;
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.form__row:first-child {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.form__row:first-child .form__col {
+  @media (min-width: $desktop-width) {
+    flex: 0 0 570px;
+    width: 570px;
+  }
 }
 
 .form__col {
