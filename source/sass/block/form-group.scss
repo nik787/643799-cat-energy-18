@@ -1,14 +1,67 @@
 .form-group {
   margin: 0;
-  padding: 20px;
+  padding: 0;
 
   border: none;
+}
+
+.form-group__title {
+  margin-bottom: 30px;
 }
 
 .form-group__list {
   @include list-reset();
 }
 
+.form-group__list--row {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form-group__list--row .form-group__item {
+  @media (min-width: $desktop-width) {
+    flex: 0 0 570px;
+    width: 570px;
+  }
+}
+
 .form-group__item {
   margin-bottom: 13px;
+}
+
+.form-group__item--radio {
+  margin-bottom: 30px;
+}
+
+.form-group__item--checkbox {
+  margin-bottom: 28px;
+}
+
+.form-group__item:last-child {
+  margin-bottom: 0;
+}
+
+
+@media (min-width: $tablet-width) {
+  .form-group__list--checkbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .form-group__item--checkbox {
+    flex: 0 0 50%;
+    width: 50%;
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-group__item--checkbox {
+    flex: 0 0 25%;
+    width: 25%;
+    margin-bottom: 54px;
+  }
 }

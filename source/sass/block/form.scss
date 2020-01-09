@@ -1,0 +1,90 @@
+.form {
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.form__row {
+  padding-top: 20px;
+}
+
+.form__row:first-child {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.form__row:first-child .form__col {
+  @media (min-width: $desktop-width) {
+    flex: 0 0 570px;
+    width: 570px;
+  }
+}
+
+.form__col {
+  padding-right: 20px;
+  padding-bottom: 23px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.form__col--bottom {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.form__col--radio {
+  padding-top: 29px;
+
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+
+  @media (min-width: $tablet-width) {
+    padding: 33px 28px;
+
+    border: 1px solid #ededed;
+  }
+}
+
+.form__button {
+  width: 100%;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 283px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 568px;
+  }
+}
+
+.form__tip {
+  display: block;
+  margin: 0 auto;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+
+    font-size: 16px;
+    line-height: 16px;
+  }
+}

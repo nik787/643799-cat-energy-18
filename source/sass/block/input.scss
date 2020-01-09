@@ -1,10 +1,11 @@
 .input {
+  position: relative;
+
   display: flex;
   align-items: center;
 
-  font-size: 16px;
-  line-height: 18px;
   color: $label-color;
+  text-transform: uppercase;
 }
 
 .input__text {
@@ -14,6 +15,7 @@
 
   font: inherit;
   color: $main-text-color;
+  text-transform: uppercase;
 
   border: 1px solid $input-color;
 
@@ -31,7 +33,32 @@
   }
 }
 
+.input__text:invalid + .input__icon {
+  fill: $input-color--error;
+}
+
+.input__text:focus + .input__icon {
+  fill: $special-color;
+}
+
+.input__icon {
+  position: absolute;
+  right: 15px;
+  z-index: 5;
+}
+
+.input__icon--email {
+  width: 18px;
+  height: 14px;
+}
+
+.input__icon--phone {
+  width: 21px;
+  height: 21px;
+}
+
 .input__text--area {
+  height: 150px;
   margin: 0;
 
   resize: none;

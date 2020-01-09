@@ -2,17 +2,28 @@
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
 }
 
-.form-main__container {
-  padding: 0;
-}
-
 .form-main__title {
   margin-bottom: 30px;
-  padding: 0 20px;
 }
 
 .form-main__subtitle {
   text-transform: uppercase;
   margin-bottom: 35px;
-  padding: 0 20px;
+}
+
+.form-main__form {
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
