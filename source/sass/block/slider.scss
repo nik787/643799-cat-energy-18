@@ -129,7 +129,19 @@
     clip: rect(auto, auto, auto, 309px);
   }
 
+  .slider__wrapper {
+    height: 461px;
+  }
+
+  .slider__progress {
+    width: 53%;
+  }
+
   .slider__nav {
-    margin-top: 0;
+    margin-top: 40px;
+  }
+
+  .slider__range {
+    margin-right: 5px;
   }
 }

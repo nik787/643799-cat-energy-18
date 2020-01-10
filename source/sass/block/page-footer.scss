@@ -98,13 +98,27 @@
 
   .page-footer__top {
     position: absolute;
-    top: 90px;
+    top: 100px;
+    left: 140px;
     z-index: 9999;
 
     min-width: 570px;
-    padding-right: 75px;
+    padding-right: 88px;
     padding-left: 75px;
 
     background-color: $main-bg;
+  }
+
+  .page-footer__text {
+    font-size: 20px;
+  }
+
+  .page-footer__addr {
+    text-align: left;
+  }
+
+  .page-footer__bottom {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }

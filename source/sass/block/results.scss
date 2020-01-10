@@ -70,3 +70,9 @@
     background: $main-bg;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .results__desc-value {
+    background: $other-bg;
+  }
+}

@@ -84,7 +84,8 @@
 
 @media (min-width: $desktop-width) {
   .page-main__container {
-    padding-left: 40px;
+    padding-top: 91px;
+    padding-left: 118px;
   }
 
   .page-main__header {
@@ -95,9 +96,13 @@
     width: 50%;
   }
 
+  .page-main__subtitle {
+    margin-bottom: 53px;
+  }
+
   .page-main__image {
-    top: 0;
-    right: 17.5%;
+    top: 10px;
+    right: 20%;
 
     width: 552px;
     height: 499px;
