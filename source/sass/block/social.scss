@@ -6,6 +6,11 @@
   margin: 0 auto;
   padding-top: 22px;
   padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-left: 40px;
+  }
 }
 
 .social__item {
@@ -13,5 +18,9 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 28px;
   }
 }

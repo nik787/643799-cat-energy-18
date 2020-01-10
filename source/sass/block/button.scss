@@ -138,6 +138,12 @@
 
   .button--link {
     font-size: 20px;
+
+    &::after {
+      margin-left: 19px;
+
+      background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+    }
   }
 
   .button--slider {
