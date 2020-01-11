@@ -122,18 +122,18 @@
   }
 }
 
+.button--special-catalog {
+  padding: 10px 0;
+
+  font-size: 16px;
+}
+
 @media (min-width: $tablet-width) {
   .button--special {
     padding: 16px 0;
 
     font-size: 20px;
     line-height: 20px;
-  }
-
-  .button--special-catalog {
-    padding: 10px 0;
-
-    font-size: 16px;
   }
 
   .button--link {

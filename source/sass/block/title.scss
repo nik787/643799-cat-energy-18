@@ -27,17 +27,34 @@
 .title--special {
   position: relative;
 
+  display: inline-block;
+  padding-right: 20px;
+
   font-size: 24px;
   line-height: 24px;
+  vertical-align: middle;
+
+  background: $main-bg;
+
 
   &::after {
     content: "";
     position: absolute;
+    top: 50%;
+    z-index: -1;
 
-    width: 100%;
+    width: 100vw;
     height: 3px;
 
     background: $special-color;
+  }
+
+  &::after {
+    left: 20px;
+  }
+
+  &::before {
+    right: 0;
   }
 }
 
