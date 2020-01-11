@@ -13,7 +13,7 @@
 
 @media (min-width: $tablet-width) {
   .additional-product {
-    padding: 25px 35px;
+    padding: 25px 35px 25px 38px;
 
     border: 1px solid rgba($border, 0.5);
   }
@@ -21,7 +21,7 @@
   .additional-product__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
 
   .additional-product__title {

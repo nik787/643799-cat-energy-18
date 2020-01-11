@@ -16,6 +16,17 @@
   margin-bottom: 35px;
 }
 
+@media (min-width: $tablet-width) {
+  .additional__container {
+    padding-top: 67px;
+    padding-bottom: 76px;
+  }
+
+  .additional__title {
+    margin-bottom: 80px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .additional__wrapper {
     display: flex;

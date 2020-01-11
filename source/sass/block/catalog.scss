@@ -7,20 +7,29 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog__container {
+    padding-top: 41px;
+  }
+
   .catalog__title {
-    margin-bottom: 156px;
+    margin-bottom: 165px;
   }
 
   .catalog__list {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    margin-left: -30px;
+    margin-right: -30px;
   }
 
   .catalog__item {
     display: flex;
-    width: 324px;
+    flex: 0 0 50%;
+    width: 50%;
     min-height: 431px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-bottom: 140px;
 
     border: none;
@@ -30,5 +39,11 @@
 @media (min-width: $tablet-width) {
   .catalog__item {
     width: 245px;
+
+    &:last-child,
+    &:nth-child(7) {
+      margin-bottom: 0;
+    }
+
   }
 }

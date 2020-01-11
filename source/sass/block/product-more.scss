@@ -37,7 +37,8 @@
   .product-more {
     display: flex;
     width: 100%;
-    padding: 55px 37px 40px;
+    max-width: 324px;
+    padding: 55px 37px 35px;
 
     border: 1px solid $border;
   }
@@ -53,7 +54,7 @@
     margin-right: auto;
     margin-bottom: 28px;
     margin-left: auto;
-    padding-top: 115px;
+    padding-top: 109px;
 
 
     &::before {
