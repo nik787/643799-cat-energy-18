@@ -31,6 +31,10 @@
   &:invalid {
     border: 1px solid $input-color--error;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 20px;
+  }
 }
 
 .input__text:invalid + .input__icon {
@@ -63,4 +67,8 @@
   padding: 18px 16px;
 
   resize: none;
+
+  @media (min-width: $tablet-width) {
+    height: 175px;
+  }
 }

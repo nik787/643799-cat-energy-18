@@ -4,31 +4,50 @@
 
 .form-main__container {
   padding-top: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 41px;
+    padding-bottom: 48px;
+  }
 }
 
 .form-main__title {
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .form-main__subtitle {
   width: 250px;
-  text-transform: uppercase;
   margin-bottom: 17px;
+
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 55%;
+    padding-left: 40px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-main__form {
-  margin-left: -20px;
   margin-right: -20px;
+  margin-left: -20px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 70px;
-    padding-right: 67px;
+    padding-top: 28px;
+    padding-right: 55px;
+    padding-left: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
     margin-right: 0;
-    padding-left: 0;
+    margin-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 }
