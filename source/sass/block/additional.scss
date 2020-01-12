@@ -23,11 +23,25 @@
   }
 
   .additional__title {
+    margin-right: -30px;
     margin-bottom: 80px;
+    margin-left: -30px;
+    padding-left: 37px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .additional__container {
+    padding-top: 75px;
+    padding-bottom: 41px;
+  }
+
+  .additional__title {
+    margin-right: -40px;
+    margin-left: -40px;
+    padding-left: 0;
+  }
+
   .additional__wrapper {
     display: flex;
     justify-content: space-between;

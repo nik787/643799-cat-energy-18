@@ -116,9 +116,7 @@
   }
 
   .title--special {
-    margin-left: -30px;
-    margin-right: -30px;
-    padding-left: 37px;
+
 
     font-size: 36px;
     line-height: 36px;
@@ -132,5 +130,11 @@
   .title--special span {
     padding-left: 30px;
     padding-right: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title--special span {
+    padding-left: 40px;
   }
 }
