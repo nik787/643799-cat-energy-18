@@ -12,6 +12,23 @@
   padding-top: 20px;
 }
 
+.form__row--contact {
+  padding-top: 30px;
+}
+
+.form__row--contact .form__col {
+  padding-bottom: 9px;
+}
+
+.form__row--extra {
+  padding-top: 10px;
+}
+
+.form__row--extra .form__col {
+  padding-bottom: 18px;
+}
+
+
 .form__row:first-child {
   @media (min-width: $desktop-width) {
     display: flex;
@@ -30,7 +47,7 @@
 .form__col {
   padding-right: 20px;
   padding-bottom: 23px;
-  padding-left: 20px;
+  padding-left: 18px;
 
   @media (min-width: $tablet-width) {
     padding-right: 0;
@@ -46,7 +63,7 @@
 }
 
 .form__col--radio {
-  padding-top: 29px;
+  padding-top: 25px;
 
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
@@ -74,7 +91,7 @@
 
 .form__tip {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 11px;
 
   font-size: 14px;
   line-height: 16px;

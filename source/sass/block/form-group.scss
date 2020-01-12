@@ -6,6 +6,7 @@
 }
 
 .form-group__title {
+  max-width: 220px;
   margin-bottom: 30px;
 }
 
@@ -27,16 +28,24 @@
   }
 }
 
+.form-group__list--checkbox {
+  margin-top: 10px;
+}
+
+.form-group__text {
+  flex-shrink: 0;
+}
+
 .form-group__item {
   margin-bottom: 13px;
 }
 
 .form-group__item--radio {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .form-group__item--checkbox {
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
 .form-group__item:last-child {

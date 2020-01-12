@@ -11,7 +11,7 @@
 .input__text {
   width: 100%;
   margin-left: 15px;
-  padding: 13px 16px 14px;
+  padding: 13px 13px 14px;
 
   font: inherit;
   color: $main-text-color;
@@ -43,7 +43,7 @@
 
 .input__icon {
   position: absolute;
-  right: 15px;
+  right: 24px;
   z-index: 5;
 }
 
@@ -60,6 +60,7 @@
 .input__text--area {
   height: 150px;
   margin: 0;
+  padding: 18px 16px;
 
   resize: none;
 }

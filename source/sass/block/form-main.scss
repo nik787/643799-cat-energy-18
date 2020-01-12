@@ -2,13 +2,18 @@
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
 }
 
+.form-main__container {
+  padding-top: 14px;
+}
+
 .form-main__title {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .form-main__subtitle {
+  width: 250px;
   text-transform: uppercase;
-  margin-bottom: 35px;
+  margin-bottom: 17px;
 }
 
 .form-main__form {
