@@ -18,11 +18,19 @@
   @media (min-width: $tablet-width) {
     padding-top: 77px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 45px;
+  }
 }
 
 .form__row--comment {
   @media (min-width: $tablet-width) {
     padding-top: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 40px;
   }
 }
 
@@ -35,6 +43,10 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 10px;
   }
 }
 
@@ -88,6 +100,10 @@
 
     border: 1px solid #ededed;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .form__button {
@@ -118,5 +134,9 @@
 
     font-size: 16px;
     line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 84px;
   }
 }
