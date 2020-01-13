@@ -75,7 +75,6 @@
     display: block;
     width: 709px;
     height: 609px;
-    margin: 0 auto 4px;
   }
 
   .page-main__button {
@@ -85,7 +84,8 @@
 
 @media (min-width: $desktop-width) {
   .page-main__container {
-    padding-left: 40px;
+    padding-top: 91px;
+    padding-left: 118px;
   }
 
   .page-main__header {
@@ -94,11 +94,16 @@
 
   .page-main__title {
     width: 50%;
+    font-weight: normal;
+  }
+
+  .page-main__subtitle {
+    margin-bottom: 53px;
   }
 
   .page-main__image {
-    top: 0;
-    right: 17.5%;
+    top: 10px;
+    right: 20%;
 
     width: 552px;
     height: 499px;

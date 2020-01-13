@@ -35,7 +35,7 @@
 @media (min-width: $tablet-width) {
   .program {
     margin-bottom: 30px;
-    padding: 68px 62px 40px 55px;
+    padding: 68px 62px 46px 55px;
   }
 
   .program--pro {
@@ -61,25 +61,19 @@
   }
 
   .program__icon {
-    top: 92px;
+    top: 83px;
     right: 62px;
 
     width: 200px;
     height: 200px;
   }
-
-  .icon__item--slim {
-    width: 141px;
-    height: 194px;
-  }
-
-  .icon__item--pro {
-    width: 268px;
-    height: 113px;
-  }
 }
 
 @media (min-width: $desktop-width) {
+  .program--pro {
+    padding-top: 70px;
+  }
+
   .program__icon {
     top: 45px;
     left: 50px;
@@ -88,18 +82,13 @@
     height: 100px;
   }
 
-  .icon__item--slim {
-    width: 71px;
-    height: 97px;
-  }
-
-  .icon__item--pro {
-    width: 134px;
-    height: 57px;
-  }
-
   .program__title {
     margin-bottom: 75px;
-    padding-left: 150px;
+    padding-left: 158px;
+  }
+
+  .program__text {
+    width: auto;
+    padding: 0;
   }
 }

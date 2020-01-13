@@ -28,8 +28,14 @@
   }
 
   .table--product .table__col {
-    padding: 5px 0;
+    padding: 8px 0;
 
     border-bottom: 1px solid $border;
+  }
+
+  .table--additional {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 2px;
   }
 }

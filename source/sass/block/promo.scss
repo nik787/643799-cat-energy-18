@@ -35,12 +35,14 @@
 @media (min-width: $tablet-width) {
   .promo {
     min-height: 200px;
-    padding: 75px 100px 69px 91px;
+    margin-top: 70px;
+    padding: 72px 106px 65px 91px;
 
     background: $special-color url("../img/gift-photo-tablet@1x.jpg") no-repeat top center / cover;
 
     &::before {
-      left: 91px;
+      top: 65px;
+      left: 119px;
     }
   }
 
@@ -57,7 +59,8 @@
   .promo {
     display: flex;
     min-height: 289px;
-    padding: 65px 40px 40px;
+    margin-top: 0;
+    padding: 65px 32px 40px;
 
     background: $special-color url("../img/gift-photo-desktop@1x.jpg") no-repeat top center / cover;
 

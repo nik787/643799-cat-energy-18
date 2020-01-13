@@ -7,9 +7,9 @@
   justify-content: space-between;
   margin-right: -20px;
   margin-left: -20px;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-right: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   padding-left: 20px;
 }
 
@@ -21,8 +21,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 22px;
-  padding-bottom: 22px;
 }
 
 .page-footer__text {
@@ -42,7 +40,7 @@
 .page-footer__logo {
   width: 100%;
   margin: 0 auto;
-  padding-top: 26px;
+  padding-top: 37px;
   padding-bottom: 27px;
 
   text-align: center;
@@ -54,10 +52,10 @@
   .page-footer__top {
     margin-right: -30px;
     margin-left: -30px;
-    padding-top: 60px;
-    padding-right: 30px;
-    padding-bottom: 60px;
-    padding-left: 30px;
+    padding-top: 65px;
+    padding-right: 72px;
+    padding-bottom: 55px;
+    padding-left: 72px;
   }
 
   .page-footer__text {
@@ -82,6 +80,7 @@
 
   .page-footer__bottom {
     flex-direction: row;
+    padding-top: 24px;
   }
 
   .page-footer__logo {
@@ -99,13 +98,27 @@
 
   .page-footer__top {
     position: absolute;
-    top: 90px;
+    top: 100px;
+    left: 140px;
     z-index: 9999;
 
     min-width: 570px;
-    padding-right: 75px;
+    padding-right: 88px;
     padding-left: 75px;
 
     background-color: $main-bg;
+  }
+
+  .page-footer__text {
+    font-size: 20px;
+  }
+
+  .page-footer__addr {
+    text-align: left;
+  }
+
+  .page-footer__bottom {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }

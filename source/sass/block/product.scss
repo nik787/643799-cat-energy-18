@@ -1,5 +1,5 @@
 .product {
-  padding-bottom: 25px;
+  padding-bottom: 18px;
 }
 
 .product__wrapper {
@@ -17,8 +17,8 @@
 
 .product__title {
   width: 80px;
-  margin-bottom: 18px;
-  padding-top: 25px;
+  margin-bottom: 12px;
+  padding-top: 20px;
 }
 
 .product__table {
@@ -30,7 +30,8 @@
     position: relative;
 
     width: 100%;
-    padding: 165px 35px 40px 35px;
+    max-width: 324px;
+    padding: 144px 38px 40px 38px;
 
     background-color: $other-bg;
   }
@@ -54,9 +55,13 @@
   }
 
   .product__title {
-    width: 125px;
-    margin: 0 auto 28px;
+    width: 135px;
+    margin: 0 auto 17px;
 
     text-align: center;
+  }
+
+  .product__table {
+    margin-bottom: 31px;
   }
 }

@@ -1,5 +1,11 @@
+.additional {
+  display: block;
+  overflow: hidden;
+}
+
 .additional__container {
-  padding-top: 30px;
+  padding-top: 25px;
+  padding-bottom: 38px;
 }
 
 .additional__list {
@@ -7,10 +13,35 @@
 }
 
 .additional__title {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional__container {
+    padding-top: 67px;
+    padding-bottom: 76px;
+  }
+
+  .additional__title {
+    margin-right: -30px;
+    margin-bottom: 80px;
+    margin-left: -30px;
+    padding-left: 37px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .additional__container {
+    padding-top: 75px;
+    padding-bottom: 41px;
+  }
+
+  .additional__title {
+    margin-right: -40px;
+    margin-left: -40px;
+    padding-left: 0;
+  }
+
   .additional__wrapper {
     display: flex;
     justify-content: space-between;

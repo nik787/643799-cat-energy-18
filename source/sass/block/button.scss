@@ -122,6 +122,24 @@
   }
 }
 
+.button--special-catalog {
+  padding: 10px 0;
+
+  font-size: 16px;
+  color: $main-button-color;
+
+  background: $main-button-bg;
+
+  &:hover,
+  &:focus {
+    background: $main-button-bg--hover;
+  }
+
+  &:active {
+    color: rgba($main-button-color, 0.3%);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .button--special {
     padding: 16px 0;
@@ -130,14 +148,14 @@
     line-height: 20px;
   }
 
-  .button--special-catalog {
-    padding: 10px 0;
-
-    font-size: 16px;
-  }
-
   .button--link {
     font-size: 20px;
+
+    &::after {
+      margin-left: 19px;
+
+      background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+    }
   }
 
   .button--slider {

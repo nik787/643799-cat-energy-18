@@ -57,4 +57,47 @@
     width: 80px;
     height: 80px;
   }
+
+  .icon__item {
+    position: relative;
+  }
+
+  .icon__item--slim {
+    top: -15px;
+
+    width: 141px;
+    height: 194px;
+  }
+
+  .icon__item--pro {
+    width: 268px;
+    height: 113px;
+  }
+
+  .icon--social-vk svg {
+    width: 30px;
+    height: 16px;
+  }
+
+  .icon--social-inst svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .icon--social-fb svg {
+    width: 14px;
+    height: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .icon__item--slim {
+    width: 71px;
+    height: 97px;
+  }
+
+  .icon__item--pro {
+    width: 134px;
+    height: 57px;
+  }
 }
