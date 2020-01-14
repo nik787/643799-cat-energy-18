@@ -1,76 +1,77 @@
 .additional-product {
   padding-top: 13px;
-  padding-bottom: 15px;
+  padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 35px 26px 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 17px 0 16px;
+  }
 }
 
 .additional-product__title {
   margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
+  }
 }
 
 .additional-product__wrapper {
   margin-bottom: 15px;
-}
 
-@media (min-width: $tablet-width) {
-  .additional-product {
-    padding: 25px 35px 25px 38px;
-
-    border: 1px solid rgba($border, 0.5);
-  }
-
-  .additional-product__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     margin-bottom: 23px;
   }
 
-  .additional-product__title {
-    margin-bottom: 0;
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin: 0;
   }
+}
 
-  .additional-product__table {
+.additional-product__table {
+  @media (min-width: $tablet-width) {
     width: 290px;
     margin-left: auto;
   }
 
-  .additional-product__table .table__col {
+  @media (min-width: $desktop-width) {
+    margin-right: 40px;
+  }
+}
+
+.additional-product__table .table__col {
+  @media (min-width: $tablet-width) {
     text-align: right;
   }
+}
 
-  .additional-product__table .table__col:last-child {
+.additional-product__table .table__col:last-child {
+  @media (min-width: $tablet-width) {
     width: 95px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .additional-product {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 17px 0 13px;
-
-    border-right: none;
-    border-left: none;
-  }
-
-  .additional-product__wrapper {
-    width: 100%;
-    margin: 0;
-  }
-
-  .additional-product__title {
-    margin-right: auto;
-  }
-
-  .additional-product__table {
-    margin-right: 40px;
-  }
-
-  .additional-product__button {
-    width: 336px;
-  }
-
-  .additional-product__table .table__col:first-child {
+.additional-product__table .table__col:first-child {
+  @media (min-width: $desktop-width) {
     text-align: left;
+  }
+}
+
+.additional-product__button {
+  @media (min-width: $desktop-width) {
+    width: 340px;
   }
 }

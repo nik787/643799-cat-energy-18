@@ -2,6 +2,10 @@
   background: $other-bg;
 }
 
+.page-footer__container {
+  position: relative;
+}
+
 .page-footer__top {
   display: flex;
   justify-content: space-between;
@@ -98,8 +102,8 @@
 
   .page-footer__top {
     position: absolute;
-    top: 100px;
-    left: 140px;
+    top: 107px;
+    left: 70px;
     z-index: 9999;
 
     min-width: 570px;
