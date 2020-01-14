@@ -1,53 +1,39 @@
+.instruction {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $other-bg;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
+}
+
 .instruction__container {
-  padding-bottom: 42px;
+  padding-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 18px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 51px;
+    padding-bottom: 40px;
+  }
 }
 
 .instruction__title {
-  margin-bottom: 27px;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
 }
 
 .instruction__list {
   @include list-reset();
-}
 
-.instruction__item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.instruction__icon {
-  flex: 0 60px;
-  margin-right: 20px;
-}
-
-.instruction__text {
-  position: relative;
-  z-index: 1;
-
-  flex: 1 200px;
-  margin: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .instruction {
-    border-bottom: 1px solid $other-bg;
-  }
-
-  .instruction__container {
-    padding-top: 13px;
-    padding-bottom: 55px;
-  }
-
-  .instruction__title {
-    margin-bottom: 72px;
-  }
-
-  .instruction__list {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-flow: row wrap;
     margin-right: -30px;
@@ -56,26 +42,60 @@
     counter-reset: section;
   }
 
-  .instruction__item {
-    position: relative;
+  @media (min-width: $desktop-width) {
+    margin-right: -40px;
+    margin-left: -40px;
+  }
+}
 
+.instruction__item {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: $special-color;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
     display: block;
     flex: 0 0 50%;
-    max-width: 50%;
+    width: 50%;
     min-height: 230px;
-    margin-bottom: 89px;
+    margin-bottom: 87px;
     padding-right: 30px;
     padding-left: 30px;
 
-    &:nth-child(3) {
+    &:nth-last-child(-n+2) {
       margin-bottom: 0;
+    }
+
+    &::before {
+      top: 0;
+
+      width: 80px;
+      height: 80px;
     }
 
     &::after {
       content: counter(section);
       position: absolute;
       top: -15px;
-      left: 140px;
+      left: 146px;
 
       font-size: 281px;
       line-height: 230px;
@@ -86,35 +106,56 @@
     }
   }
 
-  .instruction__icon {
-    margin-bottom: 33px;
+  @media (min-width: 950px) {
+    max-width: 310px;
   }
 
-  .instruction__text {
-    width: 250px;
-
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .instruction {
-    border: none;
-  }
-
-  .instruction__container {
-    padding-top: 38px;
-    padding-bottom: 40px;
-  }
-
-  .instruction__item {
+  @media (min-width: $desktop-width) {
     flex: 0 0 25%;
     max-width: 25%;
     margin-bottom: 0;
+    padding-left: 40px;
+    padding-right: 40px;
 
     &::after {
       left: 150px;
     }
+  }
+}
+
+.instruction__item--leaf {
+  &::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+}
+
+.instruction__item--powder {
+  &::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+}
+
+.instruction__item--dining {
+  &::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+}
+
+.instruction__item--clock {
+  &::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+}
+
+.instruction__text {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 250px;
+    padding-left: 0;
+    padding-top: 112px;
   }
 }

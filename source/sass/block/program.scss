@@ -5,6 +5,15 @@
   padding: 30px 22px 0;
 
   background: $other-bg;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+    padding: 77px 60px 46px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 73px 46px 40px 53px;
+  }
 }
 
 .program__title {
@@ -14,11 +23,33 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+    padding: 0;
+
+    font-size: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
+    padding-left: 162px;
+  }
 }
 
 .program__icon {
   position: absolute;
-  top: 21px;
+  top: 23px;
+
+  @media (min-width: $tablet-width) {
+    top: 93px;
+    right: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 45px;
+    left: 53px;
+  }
 }
 
 .program__text {
@@ -26,69 +57,28 @@
   padding-bottom: 22px;
 
   border-bottom: 1px solid rgba(#000000, 0.1%);
-}
 
-.program__link {
-  padding: 20px 0;
-}
-
-@media (min-width: $tablet-width) {
-  .program {
-    margin-bottom: 30px;
-    padding: 68px 62px 46px 55px;
-  }
-
-  .program--pro {
-    padding-top: 77px;
-  }
-
-  .program__title {
-    margin-bottom: 25px;
-    padding: 0;
-
-    font-size: 36px;
-    line-height: 37px;
-  }
-
-  .program__text {
-    width: 340px;
-    margin-bottom: 14px;
+  @media (min-width: $tablet-width) {
+    width: 375px;
+    margin-bottom: 17px;
 
     font-size: 16px;
     line-height: 24px;
 
     border: none;
+
+    &--pro {
+      width: 340px;
+    }
   }
 
-  .program__icon {
-    top: 83px;
-    right: 62px;
-
-    width: 200px;
-    height: 200px;
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-bottom: 14px;
+    padding: 0;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .program--pro {
-    padding-top: 70px;
-  }
-
-  .program__icon {
-    top: 45px;
-    left: 50px;
-
-    width: 100px;
-    height: 100px;
-  }
-
-  .program__title {
-    margin-bottom: 75px;
-    padding-left: 158px;
-  }
-
-  .program__text {
-    width: auto;
-    padding: 0;
-  }
+.program__link {
+  padding: 20px 0;
 }

@@ -1,17 +1,72 @@
 .icon {
   position: relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .icon--circle {
   width: 50px;
   height: 50px;
 
-  background-color: $special-color;
-  border-radius: 50%;
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: $special-color;
+    border-radius: 50%;
+  }
+}
+
+.icon__item {
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  transform: translateX(-50%) translateY(-50%);
+
+  &--slim {
+    width: 35px;
+    height: 49px;
+
+    @media (min-width: $tablet-width) {
+      top: 43%;
+      width: 141px;
+      height: 194px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 71px;
+      height: 97px;
+    }
+  }
+
+  &--pro {
+    width: 67px;
+    height: 28px;
+
+    @media (min-width: $tablet-width) {
+      width: 268px;
+      height: 113px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 134px;
+      height: 57px;
+    }
+  }
 }
 
 .icon--square {
@@ -37,6 +92,11 @@
   &-clock {
     background-image: url("../img/advantage-clock@1x.png");
   }
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .icon--social svg {
@@ -53,26 +113,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .icon--square {
-    width: 80px;
-    height: 80px;
-  }
-
-  .icon__item {
-    position: relative;
-  }
-
-  .icon__item--slim {
-    top: -15px;
-
-    width: 141px;
-    height: 194px;
-  }
-
-  .icon__item--pro {
-    width: 268px;
-    height: 113px;
-  }
 
   .icon--social-vk svg {
     width: 30px;
@@ -87,17 +127,5 @@
   .icon--social-fb svg {
     width: 14px;
     height: 28px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .icon__item--slim {
-    width: 71px;
-    height: 97px;
-  }
-
-  .icon__item--pro {
-    width: 134px;
-    height: 57px;
   }
 }

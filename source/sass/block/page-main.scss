@@ -22,6 +22,7 @@
   margin-bottom: 24px;
 
   font-size: 36px;
+  font-weight: normal;
   line-height: 36px;
 }
 
@@ -42,11 +43,11 @@
 @media (min-width: $tablet-width) {
   .page-main__container {
     padding-top: 41px;
-    padding-left: 120px;
+    padding-left: 117px;
   }
 
   .page-main__header {
-    min-height: 860px;
+    min-height: 850px;
 
     text-align: left;
     color: $title-color;
@@ -85,7 +86,7 @@
 @media (min-width: $desktop-width) {
   .page-main__container {
     padding-top: 91px;
-    padding-left: 118px;
+    padding-left: 121px;
   }
 
   .page-main__header {
@@ -94,7 +95,6 @@
 
   .page-main__title {
     width: 50%;
-    font-weight: normal;
   }
 
   .page-main__subtitle {
