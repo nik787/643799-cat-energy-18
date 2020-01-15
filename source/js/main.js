@@ -43,10 +43,16 @@ window.addEventListener("DOMContentLoaded", function() {
   burger.classList.remove("burger--nojs");
   menu.classList.remove("nav__list--open");
 
-  burger.addEventListener("click", function(e) {
+  burger.addEventListener("click", openNavigationList);
+
+  function openNavigationList(e) {
     e.preventDefault();
-
+    burger.classList.toggle("burger--close");
     menu.classList.toggle("nav__list--open");
-  });
+    window.addEventListener("keydown", function(e) {
+      if (e.keyCode === 27) {
+        openNavigationList(e);
+      }
+    });
+  }
 });
-

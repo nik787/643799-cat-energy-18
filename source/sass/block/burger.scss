@@ -30,6 +30,7 @@
     height: 2px;
 
     background: #222222;
+    transition: 0.5s transform ease-in-out;
   }
 
   &::before {
@@ -38,5 +39,19 @@
 
   &::after {
     bottom: 7px;
+  }
+}
+
+.burger--close .burger__line {
+  height: 0;
+
+  &::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    top: 0;
+    transform: rotate(-45deg);
   }
 }
