@@ -43,6 +43,7 @@
 
     @media (min-width: $tablet-width) {
       top: 43%;
+
       width: 141px;
       height: 194px;
     }
@@ -69,36 +70,6 @@
   }
 }
 
-.icon--square {
-  width: 60px;
-  height: 60px;
-
-  background-color: $special-color;
-  background-repeat: no-repeat;
-  background-position: center center;
-
-  &-leaf {
-    background-image: url("../img/advantage-leaf@1x.png");
-  }
-
-  &-powder {
-    background-image: url("../img/advantage-powder@1x.png");
-  }
-
-  &-dining {
-    background-image: url("../img/advantage-dining@1x.png");
-  }
-
-  &-clock {
-    background-image: url("../img/advantage-clock@1x.png");
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-  }
-}
-
 .icon--social svg {
   fill: #666666;
 
@@ -113,7 +84,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .icon--social-vk svg {
     width: 30px;
     height: 16px;

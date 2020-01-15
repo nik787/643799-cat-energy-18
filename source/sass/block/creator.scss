@@ -12,6 +12,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
+
     border-top: 0;
   }
 }
@@ -33,5 +34,6 @@
 .creator__logo {
   position: relative;
   left: 5px;
+
   fill: #666666;
 }

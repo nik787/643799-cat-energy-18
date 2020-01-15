@@ -2,9 +2,34 @@
   width: 100%;
   height: 362px;
 
-  background: url("../img/bg-map-mobile@1x.png") no-repeat top center / cover;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 400px;
+
+    background-image: url("../img/bg-map-tablet@1x.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-map-desktop@1x.png");
+  }
+}
+
+@media (min-width: $tablet-width) and (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .map {
+    background-image: url("../img/bg-map-tablet@2x.png");
+  }
+}
+
+@media (min-width: $desktop-width) and (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .map {
+    background-image: url("../img/bg-map-desktop@2x.png");
   }
 }
