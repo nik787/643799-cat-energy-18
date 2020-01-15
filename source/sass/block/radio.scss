@@ -9,7 +9,6 @@
   position: relative;
 
   display: flex;
-  align-items: center;
   padding-left: 46px;
 
   @media (min-width: $tablet-width) {
@@ -20,6 +19,7 @@
 .radio__label::before {
   content: "";
   position: absolute;
+  top: 50%;
   left: 0;
 
   width: 30px;
@@ -27,6 +27,7 @@
 
   border: 1px solid $border;
   border-radius: 50%;
+  transform: translateY(-50%);
 
   @media (min-width: $tablet-width) {
     width: 40px;
