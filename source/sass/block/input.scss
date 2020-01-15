@@ -20,16 +20,16 @@
   border: 1px solid $input-color;
 
   &:hover {
-    border: 1px solid $input-color--hover;
+    outline: 1px solid $input-color--hover;
   }
 
   &:focus,
   &:active {
-    border: 1px solid $input-color--active;
+    outline: 2px solid $input-color--active;
   }
 
-  &:invalid {
-    border: 1px solid $input-color--error;
+  &:active:invalid {
+    outline: 2px solid $input-color--error;
   }
 
   @media (min-width: $tablet-width) {
@@ -68,6 +68,7 @@
   height: 150px;
   margin: 0;
   padding: 18px 16px;
+  overflow: auto;
 
   resize: none;
 

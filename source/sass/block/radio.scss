@@ -3,6 +3,8 @@
 
   color: $label-color;
   text-transform: uppercase;
+
+  cursor: pointer;
 }
 
 .radio__label {
@@ -58,7 +60,7 @@ input[type="radio"]:checked ~ .radio__label::after {
   }
 }
 
-input[type="radio"]:disabled ~ .radio__label {
+input[type="radio"]:active ~ .radio__label {
   opacity: 0.3;
 }
 

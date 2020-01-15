@@ -79,6 +79,10 @@
     padding-right: 0;
     padding-left: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .form__col--bottom {

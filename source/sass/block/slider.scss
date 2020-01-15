@@ -28,7 +28,7 @@
   width: 100%;
   height: 232px;
   margin-right: auto;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   margin-left: auto;
 
   @media (min-width: $tablet-width) {
@@ -89,6 +89,8 @@
 
 .slider__nav {
   display: flex;
+  align-items: center;
+  padding: 10px 0;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -111,8 +113,8 @@
   align-self: center;
   width: 84px;
   height: 14px;
-  margin-right: 9px;
-  margin-left: 14px;
+  margin-right: 15px;
+  margin-left: 15px;
   padding: 3px 5px;
 
   background: $main-bg;
@@ -167,10 +169,37 @@
     width: 34px;
     height: 34px;
 
-    background-color: $special-color;
-    border: 13px solid #eaeaea;
+    background-color: #ffffff;
+    border: 2px solid #cdcdcd;
     border-radius: 50%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      width: 8px;
+      height: 8px;
+      margin: auto;
+
+      background-color: #68b738;
+      border-radius: 50%;
+    }
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: solid 2px $special-color;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
   }
 }

@@ -1,6 +1,8 @@
 .checkbox {
   color: $label-color;
   text-transform: uppercase;
+
+  cursor: pointer;
 }
 
 .checkbox__label {
@@ -49,11 +51,11 @@ input[type="checkbox"]:checked ~ .checkbox__label::after {
   }
 }
 
-input[type="checkbox"]:disabled ~ .checkbox__label {
+input[type="checkbox"]:active ~ .checkbox__label {
   opacity: 0.3;
 }
 
 .checkbox:hover .checkbox__label::before,
-.checkbox:focus .checkbox__label::before {
+input[type="checkbox"]:focus + .checkbox__label::before {
   border-color: #bababa;
 }
