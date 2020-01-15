@@ -9,11 +9,14 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 0;
-    margin-left: 40px;
+    margin-left: 30px;
   }
 }
 
 .social__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 37px;
 
   &:last-child {
@@ -23,4 +26,10 @@
   @media (min-width: $tablet-width) {
     margin-right: 28px;
   }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

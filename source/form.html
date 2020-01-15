@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css" as="style">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font">
   </head>
   <body>
     <div style="display: none">
@@ -53,13 +55,13 @@
                   <li class="form-group__item">
                     <label class="input">
                       <span class="form-group__text">Имя:*</span>
-                      <input class="input__text" type="text" name="name" id="name" placeholder="Барсик">
+                      <input class="input__text" type="text" name="name" id="name" placeholder="Барсик" required>
                     </label>
                   </li>
                   <li class="form-group__item">
                     <label class="input">
                       <span class="form-group__text">Вес (кг):*</span>
-                      <input class="input__text" type="text" name="weight" id="weight" placeholder="7">
+                      <input class="input__text" type="text" name="weight" id="weight" placeholder="7" required>
                     </label>
                   </li>
                   <li class="form-group__item">
@@ -107,7 +109,7 @@
                   <li class="form-group__item">
                     <label class="input">
                       <span class="form-group__text">E-mail:*</span>
-                      <input class="input__text" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+                      <input class="input__text" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
                       <svg class="input__icon input__icon--email" width="18" height="14" role="img">
                         <use xlink:href="img/sprite.svg#icon-mail"></use>
                       </svg>
@@ -116,7 +118,7 @@
                   <li class="form-group__item">
                     <label class="input">
                       <span class="form-group__text">Телефон:*</span>
-                      <input class="input__text" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
+                      <input class="input__text" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
                       <svg class="input__icon input__icon--phone" width="21" height="21" role="img">
                         <use xlink:href="img/sprite.svg#icon-phone"></use>
                       </svg>
@@ -186,7 +188,7 @@
       <div class="container page-footer__container">
         <div class="page-footer__top page-footer__top--gray">
           <p class="page-footer__text">
-            Приглашаем к сотрудничеству дилеров!
+            Приглашаем к&nbsp;сотрудничеству дилеров!
           </p>
           <p class="page-footer__addr">
             ул. Большая Конюшенная, д. 19/8
@@ -231,6 +233,7 @@
       </div>
     </footer>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=334b6d6e-e3bb-4b2f-aaf1-c0e7afff19e2&lang=ru_RU"></script>
+    <script src="js/picturefill.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
