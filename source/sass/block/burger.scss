@@ -5,6 +5,10 @@
 
   background: none;
   border: none;
+
+  &--nojs {
+    display: none;
+  }
 }
 
 .burger__line {

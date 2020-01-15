@@ -37,13 +37,16 @@ ymaps.ready(function () {
   myMap.geoObjects
       .add(myPlacemark)
 });
+window.addEventListener("DOMContentLoaded", function() {
+  var burger = document.querySelector(".nav__burger");
+  var menu = document.querySelector(".nav__list");
+  burger.classList.remove("burger--nojs");
+  menu.classList.remove("nav__list--open");
 
-var burger = document.querySelector(".nav__burger");
-var menu = document.querySelector(".nav__list");
-console.log(burger);
+  burger.addEventListener("click", function(e) {
+    e.preventDefault();
 
-burger.addEventListener("click", function(e) {
-  e.preventDefault();
-
-  menu.classList.toggle("nav__list--open");
+    menu.classList.toggle("nav__list--open");
+  });
 });
+
