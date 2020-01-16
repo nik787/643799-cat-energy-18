@@ -73,6 +73,6 @@ input[type="radio"]:active ~ .radio__label {
   border-color: #bababa;
 }
 
-input[type="radio"]:focus .radio__label {
+input[type="radio"]:focus + .radio__label {
   outline: 1px solid rgba(blue, 0.3);
 }
