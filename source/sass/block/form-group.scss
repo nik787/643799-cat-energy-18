@@ -45,8 +45,6 @@
 }
 
 .form-group__list--checkbox {
-  margin-top: 10px;
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-flow: row wrap;
@@ -57,6 +55,7 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 0;
+    margin-bottom: 0;
     margin-left: 0;
   }
 }
@@ -74,20 +73,20 @@
 }
 
 .form-group__item--radio {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 33px;
+    margin-bottom: 14px;
   }
 }
 
 .form-group__item--checkbox {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     flex: 0 0 50%;
     width: 50%;
-    margin-bottom: 54px;
+    margin-bottom: 27px;
     padding-right: 60px;
     padding-left: 60px;
   }

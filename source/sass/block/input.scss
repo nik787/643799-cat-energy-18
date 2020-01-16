@@ -33,11 +33,12 @@
   }
 
   @media (min-width: $tablet-width) {
+    min-height: 52px;
     padding: 11px 20px;
   }
 }
 
-.input__text:invalid + .input__icon {
+.input__text:focus:invalid + .input__icon {
   fill: $input-color--error;
 }
 

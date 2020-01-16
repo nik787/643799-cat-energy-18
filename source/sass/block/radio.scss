@@ -11,9 +11,13 @@
   position: relative;
 
   display: flex;
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-left: 46px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 9px;
+  padding-bottom: 9px;
     padding-left: 59px;
   }
 }
@@ -40,8 +44,8 @@
 input[type="radio"]:checked ~ .radio__label::after {
   content: "";
   position: absolute;
-  bottom: 15%;
-  left: 10px;
+  bottom: 31%;
+  left: 9px;
 
   width: 12px;
   height: 12px;
@@ -52,7 +56,7 @@ input[type="radio"]:checked ~ .radio__label::after {
   transform: rotate(45deg);
 
   @media (min-width: $tablet-width) {
-    bottom: 1px;
+    bottom: 9px;
     left: 11px;
 
     width: 18px;
@@ -67,4 +71,8 @@ input[type="radio"]:active ~ .radio__label {
 .radio:hover .radio__label::before,
 .radio:focus .radio__label::before {
   border-color: #bababa;
+}
+
+input[type="radio"]:focus .radio__label {
+  outline: 1px solid rgba(blue, 0.3);
 }

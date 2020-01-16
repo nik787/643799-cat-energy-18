@@ -20,7 +20,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 45px;
+    padding-top: 67px;
   }
 }
 
@@ -46,12 +46,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 67px;
     padding-bottom: 10px;
   }
 }
 
 .form__row--extra .form__col {
-  padding-bottom: 18px;
+  padding-bottom: 10px;
 }
 
 
@@ -66,7 +67,13 @@
 .form__row:first-child .form__col {
   @media (min-width: $desktop-width) {
     flex: 0 0 570px;
-    width: 570px;
+    max-width: 570px;
+  }
+}
+
+.form__row--button {
+  @media (min-width: $desktop-width) {
+    padding-top: 12px;
   }
 }
 
@@ -93,14 +100,15 @@
 }
 
 .form__col--radio {
-  padding-top: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
 
   @media (min-width: $tablet-width) {
     margin-top: 48px;
-    padding: 33px 28px;
+    padding: 25px 28px;
 
     border: 1px solid #ededed;
   }
